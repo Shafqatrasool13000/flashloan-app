@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    outline: none;
+    border: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+p,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+body{
+  font-family: 'Oregano', sans-serif !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html{
+  font-family: 'Oregano' !important;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+@font-face {
+  font-family: "Oregano";
+  src: local("SFUIText-Regular"),
+      url("./assets/fonts/Oregano-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OreganoItalic";
+  src: local("SFUIText-Regular"),
+      url("./assets/fonts/Oregano-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: local("SFUIText-Regular"),
+      url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSansBold";
+  src: local("SFUIText-Regular"),
+      url("./assets/fonts/OpenSans-Bold.ttf") format("truetype");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
