@@ -4,6 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import { NavbarStyled } from "./style";
 import { ConnectKitButton } from "connectkit";
+import { NavbarBrand } from "react-bootstrap";
 
 function BasicExample() {
   return (
@@ -30,10 +31,10 @@ function BasicExample() {
           </NavLink>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mx-auto d-flex justify-content-between">
-              <NavLink className="nav-link" to="/create">
+              <NavLink className="nav-link" to="/strategies">
                 Strategies
               </NavLink>
-              <NavLink className="nav-link" to="/create">
+              <NavLink className="nav-link" to="/opportunities">
                 Opportunities
               </NavLink>
               <NavLink className="nav-link" to="/create">
@@ -41,7 +42,7 @@ function BasicExample() {
               </NavLink>
             </Nav>
           </Navbar.Collapse>
-          <NavLink className="navbar-brand d-lg-block d-none" to="/">
+          <NavbarBrand className="d-lg-block d-none">
           <ConnectKitButton.Custom>
               {({ isConnected, show, truncatedAddress, ensName }) => {
                 return (
@@ -53,7 +54,7 @@ function BasicExample() {
                 );
               }}
             </ConnectKitButton.Custom>
-          </NavLink>
+          </NavbarBrand>
         </Container>
       </Navbar>
     </NavbarStyled>

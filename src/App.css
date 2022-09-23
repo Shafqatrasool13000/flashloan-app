@@ -16,8 +16,10 @@ body{
   font-family: 'Oregano', sans-serif !important;
 }
 
-html{
-  font-family: 'Oregano' !important;
+.offcanvas{
+  height: 100vh !important;
+  background-color: rgb(1, 1, 1) !important;
+  color: white !important;
 }
 img{
   max-width: 100%;
