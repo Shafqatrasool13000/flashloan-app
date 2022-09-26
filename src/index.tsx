@@ -7,15 +7,14 @@ import {BrowserRouter} from 'react-router-dom';
 import { WagmiConfig, createClient } from "wagmi";
 import { ConnectKitProvider, getDefaultClient } from "connectkit";
 
-const alchemyId = process.env.ALCHEMY_ID;
+const alchemyId = process.env.REACT_APP_ALCHEMY_ID;
 
 const client = createClient(
   getDefaultClient({
-    appName: "Your App Name",
+    appName: 'test',
     alchemyId,
   }),
 );
-
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

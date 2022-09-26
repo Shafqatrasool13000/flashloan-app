@@ -1,8 +1,13 @@
+import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import HeadBar from "./HeadBar";
 import { CubeBodyStyled } from "./style";
 
-const CubeBody = () => {
+type CubeBodyProps={
+  getExchangeBox:()=>void
+}
+
+const CubeBody:React.FC<any> = ({getExchangeBox}) => {
 
   const furocomb = ["Unstake Token", "Claim COMBO"];
   const paraswap = ["Swap Token"];
@@ -116,7 +121,7 @@ const CubeBody = () => {
               <Row key={index} className="method">
                 {exchanger.map((name, index) => (
                   <Col key={index} sm={6} md={3}>
-                    <button key={index} className="method-btn w-100 mt-3">
+                    <button onClick={()=>getExchangeBox(name)} key={index} className="method-btn w-100 mt-3">
                       {name}
                     </button>
                   </Col>

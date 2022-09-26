@@ -28,7 +28,7 @@ const Index = () => {
   return (
     <StrategyStyled>
       <div className="search-bar w-100 d-flex flex flex-column align-items-center">
-        <input type="text" placeholder="Search for protocol and token strategies"  className=""/>
+        <input type="number" placeholder="Search for protocol and token strategies"  className=""/>
         <div className="icon">
           <IoSearchCircleSharp fontSize={35} color='black' />
         </div>

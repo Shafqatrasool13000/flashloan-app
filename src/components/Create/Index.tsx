@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import { CreateStyled } from "./style";
 import { BsFillQuestionCircleFill } from "react-icons/bs";
 import { FaEthereum } from "react-icons/fa";
@@ -8,12 +8,8 @@ import { useState } from "react";
 const Index: React.FC = () => {
   const [data, setData] = useState([1, 2]);
 
-
   return (
     <CreateStyled>
-      <Container>
-        <Row>
-          <Col md={6}>
             <div className="list px-4">
               {data.map((title, index) => (
                 <Row key={index} className="list-item mt-4">
@@ -57,12 +53,6 @@ const Index: React.FC = () => {
                 </Row>
               ))}
             </div>
-          </Col>
-          <Col md={6}>
-
-          </Col>
-        </Row>
-      </Container>
     </CreateStyled>
   );
 };

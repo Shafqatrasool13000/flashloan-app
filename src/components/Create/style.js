@@ -2,12 +2,14 @@ import styled from "styled-components";
 import { secondaryDark } from "../Global";
 
 export const CreateStyled = styled.div`
+
 margin-top: 24px;
+
 .list{
 background-color: ${secondaryDark};
 color: #ffffff;
 padding: 8px 14px 16px 14px;
-border-radius: 12px;
+border-radius: 7px;
 margin: 0 auto;
 
 &-item{

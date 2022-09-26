@@ -6,6 +6,7 @@ export const greyColor = '#798da3';
 export const greyColor1 = '#9fafc1';
 export const greyColor2 = '#232323';
 export const greyColor3 = '#c0c0c0';
+export const greyColor4 = 'rgb(121 141 163 / 20%)';
 
 
 // export const CustomButton = styled.button`

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { greyColor1, primaryColor } from '../Global';
 
 export const HowItWorksStyled = styled.div`
-border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 padding: 50px 0 80px 0;
 .left-side{
 &-img{

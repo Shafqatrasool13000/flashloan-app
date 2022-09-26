@@ -24,6 +24,11 @@ font-size: 16px;
 border-radius: 3px;
 padding: 5px 26px;
 color: white;
+
+@media screen and (min-width:768px){
+margin-right: 80px;
+}
+
 }
 }
 .right-side{

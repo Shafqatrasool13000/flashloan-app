@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { greyColor1, greyColor3 } from '../Global';
+import { greyColor1,greyColor4 } from '../Global';
 
 export const FooterStyled=styled.div`
 padding: 16px 0;
-position: fixed;
+/* position: fixed; */
 bottom: 0;
 width: 100%;
-background-color: ${greyColor3};
+border-top: 1px solid ${greyColor4};
 
 .inner-container{
 .social-icons{
@@ -18,7 +18,7 @@ margin-left: 14px;
 }
 }
 .copyright-text{
-font-size: 14px;
+font-size: 16px;
 color: ${greyColor1};
 }
 }
